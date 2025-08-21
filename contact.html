@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak | Portofolio Rehan</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+  <nav class="container">
+    <h1 class="logo">Reihan Jaya Prasetiono</h1>
+    
+    <!-- Tombol menu (muncul hanya di HP) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="projects.html">Proyek</a></li>
+      <li><a href="contact.html" class="active">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<section class="contact container">
+  <h2>Hubungi Saya</h2>
+  <p>Ingin bekerja sama atau sekadar menyapa? Silakan hubungi saya melalui media sosial atau email di bawah ini.</p>
+  
+  <div class="contact-info">
+    <p><i class="fa-solid fa-envelope"></i> reihan14811y@gmail.com</p>
+    <p><i class="fa-solid fa-phone"></i> +62 838-7167-0131</p>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://instagram.com/reihan14811y" target="_blank" class="ig"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://wa.me/6283871670131" target="_blank" class="wa"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="https://tiktok.com/@reihan..r" target="_blank" class="tt"><i class="fa-brands fa-tiktok"></i></a>
+    <a href="https://maps.google.com?q=lokasi" target="_blank" class="map"><i class="fa-solid fa-location-dot"></i></a>
+  </div>
+</section>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+
+</body>
+</html>

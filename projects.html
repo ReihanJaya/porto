@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyek | Portofolio Rehan</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 15px 0;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav.container {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #cbd5e1;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #38bdf8;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 60px 20px;
+    }
+
+    .projects .container {
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .projects h2 {
+      font-size: 2.3rem;
+      margin-bottom: 40px;
+      color: #1e293b;
+      position: relative;
+    }
+
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .project-card h3 {
+      margin: 20px 0 10px;
+      font-size: 1.3rem;
+      color: #0f172a;
+    }
+
+    .project-card p {
+      padding: 0 20px 20px;
+      font-size: 0.95rem;
+      color: #475569;
+    }
+
+    .btn-project {
+      display: inline-block;
+      margin: 0 0 20px;
+      padding: 10px 18px;
+      background: #38bdf8;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+
+    .btn-project:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <h1 class="logo">Reihan Jaya Prasetiono</h1>
+    
+    <!-- Tombol menu (muncul hanya di HP) -->
+    <div class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <ul id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Tentang</a></li>
+      <li><a href="projects.html">Proyek</a></li>
+      <li><a href="contact.html" class="active">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>✨ Proyek Saya</h2>
+      <div class="project-list">
+
+        <div class="project-card">
+          <img src="paud.png" alt="Website PAUD">
+          <h3>Website PAUD</h3>
+          <p>
+            Website interaktif untuk lembaga PAUD dengan desain ceria dan ramah anak.
+            Dibuat agar memudahkan guru dan orang tua dalam berkomunikasi, sekaligus menjadi media pembelajaran digital yang modern.
+          </p>
+          <a href="https://harapan-bangsa-nfyz.vercel.app/" target="_blank" class="btn-project">🔗 Lihat Proyek</a>
+        </div>
+
+        <div class="project-card">
+          <img src="figma.png" alt="Figma MRT">
+          <h3>Desain Figma MRT</h3>
+          <p>
+            Prototype aplikasi transportasi MRT yang saya desain di Figma.
+            Fokus pada antarmuka yang sederhana, navigasi cepat, dan pengalaman pengguna yang praktis untuk kebutuhan sehari-hari.
+          </p>
+          <a href="https://www.figma.com/design/mFun7xPll4uyhry3oUwgod/Trainify?node-id=0-1&t=PMqqmBcTRvGsc6th-1" target="_blank" class="btn-project">🎨 Lihat Desain</a>
+        </div>
+
+        <div class="project-card">
+          <img src="absensi.png" alt="Aplikasi Absensi">
+          <h3>Aplikasi Absensi</h3>
+          <p>
+            Aplikasi absensi berbasis digital yang saya kembangkan untuk mempermudah pencatatan kehadiran.
+            Dengan sistem login, manajemen data, dan laporan otomatis, absensi jadi lebih cepat dan efisien.
+          </p>
+          <a href="https://github.com/link-apk-absen" target="_blank" class="btn-project">📱 Coba Aplikasi</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

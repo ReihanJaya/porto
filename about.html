@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya | Portofolio Rehan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+<nav class="container">
+  <h1 class="logo">Reihan Jaya Prasetiono</h1>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+
+  <ul id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">Tentang</a></li>
+    <li><a href="projects.html">Proyek</a></li>
+    <li><a href="contact.html" class="active">Kontak</a></li>
+  </ul>
+</nav>
+
+</header>
+
+
+  <!-- About Section -->
+<section class="about" id="about">
+  <div class="about-container">
+    <div class="about-img">
+      <img src="foto.jpg" alt="Foto Saya">
+    </div>
+    <div class="about-text">
+      <h2>Tentang Saya</h2>
+      <p>Saya seorang Web Developer muda yang berfokus pada desain modern dan pengalaman pengguna. Coding bagi saya bukan hanya menulis baris kode, tetapi cara untuk menciptakan karya digital yang hidup.</p>
+      <a href="projects.html" class="btn">Lihat Proyek</a>
+      <div class="menu-toggle" id="menu-toggle">
+  <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
